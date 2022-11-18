@@ -5,10 +5,8 @@ class Giraffe < Formula
   sha256 "8224d667e3f8811b01914c2cd149c0a6249f1f00289296c11f20b1330999d94b"
   license "MIT"
   def install
-    system "./configure", *std_configure_args, "--disable-silent-rules"
     bin.install 'giraffe'
   end
-
   test do
     system "false"
   end
